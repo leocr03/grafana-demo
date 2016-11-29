@@ -1,0 +1,2 @@
+./influxdb.sh
+./grafana.sh
