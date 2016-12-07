@@ -1,0 +1,18 @@
+version: "2"
+services:
+  grafana:
+    image: grafana/grafana
+    ports:
+     - "3000:3001"
+  influxdb:
+    image: tutum/influxdb
+    volumes:
+     - /var/influxdb:/data
+    ports:
+     - "8083:8084"
+     - "8086:8087"
+    environment:
+     PRE_CREATE_DB: grafanademo
+    stdin_open: true
+    tty: true
+
