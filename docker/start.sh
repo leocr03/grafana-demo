@@ -1,2 +1,0 @@
-./influxdb.sh
-./grafana.sh
