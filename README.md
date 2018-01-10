@@ -19,7 +19,7 @@ docker-compose up
 
 ```bash
 sudo gem install influxdb
-ruby populate.rb
+ruby populate.rb #run many times (1 request, 1 data generated)
 ```
 
 * To access Grafana:
