@@ -7,7 +7,7 @@ services:
     links:
      - influxdb
   influxdb:
-    image: tutum/influxdb
+    image: tutum/influxdb 
     stdin_open: true
     tty: true
     volumes:
@@ -15,6 +15,9 @@ services:
     ports:
      - "8083:8083"
      - "8086:8086"
+    hostname: influxdb
     environment:
      PRE_CREATE_DB: grafanademo
+     INFLUXDB_USER: admin
+     INFLUXDB_PASS: admin
 
